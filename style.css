@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+
+body {
+    background: 
+    linear-gradient(to right, #5bccf6, #fcde67);
+}
+
 
 h1 {
     display: flex;
     justify-content: center;
-    font: "Noto Sans", sans-serif;
-
-
+    font-family: "Rubik Wet Paint", sans-serif;
+    font-size: 64px;
 }
 
 h2 {
     display: flex;
     justify-content: center;
-    font: "Noto Sans", sans-serif;
-
+    font-family: "Noto Sans", sans-serif;
+    transform: translateY(90%);
 }
 
 .images {
@@ -20,34 +26,81 @@ h2 {
     justify-content: center;
 }
 
+.player1Roll {
+    font-size: 32px;
+    font-family: "Noto Sans", sans-serif;
+}
 .container {
     display: flex;
     justify-content: center;
-    font: "Noto Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif;
 
+}
+
+#player1Score {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-family: "Noto Sans", sans-serif;
 }
 
 .buttons {
     display: flex;
     justify-content: center;
+    font-family: "Noto Sans", sans-serif;
     
 }
 
-/* #buttons {
-    align-items: center;
-} */
+#player1Image {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin-left: 840px;
+    padding: 16px;
+}
+
+#text1Roll {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-family: "Noto Sans", sans-serif;
+}
 
 button {
     display: flex;
+    
     color: white;
-    background-color: palevioletred;
-    width: 8cm;
-    height: 2cm;
-    font-size: 48px;
-    padding: 24px;
+    background-color: blueviolet;
+    width: 3cm;
+    height: 3cm;
+    font-size: 24px;
+    padding: 32px;
+    margin: 32px;
     cursor: pointer;
-    border-color: black;
+    border-color: purple;
     justify-content: center;
-    /* transform: scaleY(); */  
+    transform: translateY(60%);
+     
 }
 
+@media all and (max-width: 768px) {
+	h2 {
+		font-size: 52px;
+	}
+	#buttons {
+		width: 70vw;
+	}
+	button {
+		font-size: 14px;
+		width: 120px;
+		height: 120px;
+		margin: 10px;
+	}
+}
+
+@media all and (max-width: 650px) {
+	#buttons {
+		width: 80vw;
+	}
+}

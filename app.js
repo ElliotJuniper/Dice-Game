@@ -21,9 +21,8 @@ let total = 0;player1Roll.addEventListener("click", () => {
 
 	if (total >= 20) {
 		player1Score.textContent = `${total} - Congratulations!`;
-		images.style.backgroundColor = "#FFFFFF";
-		container.style.backgroundColor = "#0CD6B7";
-		body.style.backgroundColor = "#0CD6B7";
+	
+		body.style.background = "#0CD6B7";
 
 		player1Total = 0;
 
@@ -34,19 +33,19 @@ let total = 0;player1Roll.addEventListener("click", () => {
 	} else {
 		if (currentRoll == 1) {
 			player1Score.textContent = `${total} - Better luck next time!`;
-			images.style.backgroundColor = "#FFFFFF";
-			container.style.backgroundColor = "#D80101";
-			body.style.backgroundColor = "#D80101";
+			body.style.background = "#D80101";
+			// header.style.color = "#FFFFFF";
 
 			player1Total = 0;
 			
 			player1Roll.style.display = "none";
 			playAgain.style.display = "marker";
-			playAgain.style.backgroundColor = "#770028";
+			playAgain.style.backgroundColor = "#000000";
 		}
 	}
 });
 
+// Look if yopu need to add this?
 playAgain.addEventListener("click", () => {
 	window.location.reload();
 });
