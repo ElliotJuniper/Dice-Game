@@ -18,14 +18,19 @@ h2 {
     display: flex;
     justify-content: center;
     font-family: "Noto Sans", sans-serif;
-    transform: translateY(90%);
+    transform: translateY(70%);
 }
 
-.images {
+#player1Image {
+    height: 200px;
     display: flex;
     justify-content: center;
+    align-items: center;    
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(20%);
+    
 }
-
 .player1Roll {
     font-size: 32px;
     font-family: "Noto Sans", sans-serif;
@@ -51,14 +56,6 @@ h2 {
     
 }
 
-#player1Image {
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    margin-left: 840px;
-    padding: 16px;
-}
 
 #text1Roll {
     display: flex;
@@ -81,6 +78,8 @@ button {
     border-color: purple;
     justify-content: center;
     transform: translateY(60%);
+
+    
      
 }
 
